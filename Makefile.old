@@ -1,0 +1,19 @@
+CC = g++
+CFLAGS = $(shell root-config --cflags)
+LIBS = $(shell root-config --libs) -lEG
+
+SRCS = src/main.cxx
+OBJS = $(SRCS:.cxx=.o)
+	EXEC = PDGref
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+		$(CC) $(CFLAGS) $(OBJS) -o $(EXEC) $(LIBS)
+
+%.o: %.cxx
+		$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+		rm -f $(OBJS) $(EXEC)
+

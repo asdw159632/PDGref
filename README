@@ -1,0 +1,35 @@
+
+PDGref v1.0
+
+Usage: 
+
+PDGref [-n <particle name>] [-id <particle PDG ID>] [-D] [-m] [-b]
+
+   -n or --name: print the particle name and PDG ID of the particle whose name is similar to the input name.
+
+   -id or --PDGid: print the particle name and PDG ID of the particle whose PDG ID is equal to the input PDG ID.
+
+   -D or --Decay: print the decay channels of the particle, or only print basic information of the particle if -D is not specified.
+
+   -m or --Mass: print the mass and width of the particle, or only print basic information of the particle if -m is not specified.
+
+   -b or --basic: print only name and PDG ID of the particle, without any decay channels or mass information.
+   If there is no -b, -m or -D option, -b -m is the default option.
+ 
+   -h or --help: print the usage of the program.
+
+###############################
+
+Install
+
+###############################
+
+	1. cmake ./
+
+	2. make
+
+Backup method
+
+	1. cp Makefile.old Makefile
+
+	2. make
