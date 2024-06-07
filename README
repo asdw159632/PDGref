@@ -1,7 +1,16 @@
 
 PDGref v1.0
 
-Usage: 
+for quick search particle info from PDG data
+
+need CERN ROOT dependence
+
+
+********************
+
+Usage
+
+********************
 
 PDGref [-n <particle name>] [-id <particle PDG ID>] [-D] [-m] [-b]
 
@@ -18,11 +27,11 @@ PDGref [-n <particle name>] [-id <particle PDG ID>] [-D] [-m] [-b]
  
    -h or --help: print the usage of the program.
 
-###############################
+********************
 
 Install
 
-###############################
+********************
 
 	1. cmake ./
 
